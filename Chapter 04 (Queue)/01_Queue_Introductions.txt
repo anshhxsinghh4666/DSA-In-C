@@ -1,0 +1,28 @@
+QUEUE : 
+
+A Queue is a fundamental Data Structure (DS) in computer science, following the First-In, First-Out (FIFO) principle. This means the element that was added earliest is the first one to be removed, much like people waiting in a line.
+
+Key Characteristics and Principle
+FIFO (First-In, First-Out): The element added first is always the one removed first.
+
+Linear Structure: Elements are arranged sequentially.
+
+Two Ends: Operations occur at two distinct ends:
+
+Rear (or Tail): Where elements are inserted (enqueued).
+
+Front (or Head): Where elements are deleted (dequeued).
+
+Basic Operations
+There are typically four main operations associated with a Queue:
+
+Enqueue (or Insert): Adds an element to the rear of the queue.
+
+Dequeue (or Delete): Removes an element from the front of the queue.
+
+Peek (or Front/Top): Returns the element at the front of the queue without removing it.
+
+isEmpty: Checks if the queue contains any elements.
+
+isFull: Checks if the queue is full or not 
+

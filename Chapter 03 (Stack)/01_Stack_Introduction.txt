@@ -1,0 +1,75 @@
+/*
+STACK : Linear Data Structure 
+
+Principle Stack Follow : 
+-> Insertion and Deletion is only possible from one end.
+-> Last In - First Out  OR  First In - Last Out         
+        +-----+
+        | 50  |   <-- Top  (Last In - First Out)
+        +-----+
+        | 40  |
+        +-----+
+        | 30  |
+        +-----+
+        | 20  |
+        +-----+
+        | 10  |   <-- Bottom  (First In - Last Out)
+        +-----+
+
+
+Operations on Stack : All Operations can be performed from the top of stack only
+
+-> Inserting Data : Push(x) 
+        ~ x->Data to Push
+        ~ Can Only Push element of same data type
+
+-> Deleting Data : Pop()
+        ~ Pops the top most element 
+        ~ No need to pass any argument
+        ~ Returns top most element from the stack and removes it from the stack.
+
+-> Peek / Top : peek() / top()
+        ~ Returns top most element from the stack WITHOUT removing it.
+
+-> Empty : isempty()
+        ~ Return true if the stack is empty , otherwise returns false.
+
+-> Full : isfull()
+        ~ Return false if the stack is empty , otherwise returns true.
+
+
+There are two ways to implement stack : 
+-> Static Memory Allocation : Using Arrays
+-> Dynamic Memory Allocation : Using Linked List
+
+Zero based Indexing : 
+Index  Top
+ 4    +-----+
+      | 50  |   <-- Top = 4
+      +-----+
+ 3    | 40  |
+      +-----+
+ 2    | 30  |
+      +-----+
+ 1    | 20  |
+      +-----+
+ 0    | 10  |   <-- Bottom = 0
+      +-----+
+
+In starting Hypothetically we assume top = -1
+
+UNDERFLOW CONDITION : When we apply pop() operation on empty Stack it will be an UNDERFLOW CONDITION
+
+When we apply push operation in stack firstly increment top (top++) before every push, even pushing in empty stack as empty stack top = -1.
+When we apply pop operation in stack , after poping out decreament value of top (top--)
+
+OVERFLOW CONDITION : When we push data in a full stack. We can't push data in a full stack.
+
+APPLICATIONS OF STACK : 
+-> Reverse a string 
+-> Undo Operation
+-> Recusrion or Function Call
+-> Infix to PostFix/Prefix Conversion 
+-> Evolution of Post Fix Expression
+-> Tower of Hanoi
+*/ 
