@@ -28,7 +28,6 @@ Bottom->Index 0
 
 */
 
-
 /*
 ALGORITHM : 
 
@@ -80,7 +79,6 @@ Function display()
 */
 
 #include <stdio.h>
-#include <stdlib.h>
 
 #define N 5  // Defines value of N (Macro)
 
