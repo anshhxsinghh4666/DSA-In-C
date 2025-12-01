@@ -1,5 +1,31 @@
 // IMPLEMENTATIONS OF QUEUE USING ARRAYS : Using static memory allocation
 
+/*
+ALGORITHM : Enqueue Operation (for Linear Queue)
+Step 1: Check if rear == N − 1
+  • If TRUE → print "Overflow" and stop
+Step 2: Else if front == −1 and rear == −1
+  • Set front = 0
+  • Set rear = 0
+  • Insert x at queue[rear]
+Step 3: Else
+  • Increase rear by 1
+  • Insert x at queue[rear]
+Step 4: End
+
+ALGORITHM : Dequeue Operation (for Linear Queue)
+Step 1: Check if front == −1 and rear == −1
+  • If TRUE → print "Underflow" and stop
+Step 2: Else if front == rear
+  • Set front = −1
+  • Set rear = −1
+  • (Queue becomes empty)
+Step 3: Else
+  • Print queue[front]
+  • Increase front by 1
+Step 4: End
+*/
+
 #include <stdio.h>
 
 #define N 5

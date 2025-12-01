@@ -1,4 +1,16 @@
-// INSERTION SORT : 
+// INSERTION SORT :
+
+/*
+ALGORITHM : Insertion Sort Section Only
+Step 1: Loop from i = 1 to i = n − 1. Repeat the following steps:
+  • Set key = arr[i]
+  • Set j = i − 1
+  • While j ≥ 0 and arr[j] > key, repeat:
+    - Set arr[j + 1] = arr[j]
+    - Decrease j by 1
+  • After the loop ends, set arr[j + 1] = key
+Step 2: End
+*/
 
 // TC = O(n^2)
 
@@ -7,7 +19,7 @@
 void insertionSort(int arr[], int n) {
     int i, key, j;
     for (i = 1; i < n; i++) {
-        key = arr[i];      // Current element to be inserted
+        key = arr[i];  // Current element to be inserted
         j = i - 1;
 
         // Move elements greater than key to one position ahead
@@ -26,8 +38,7 @@ int main() {
     insertionSort(arr, n);
 
     printf("Sorted array: ");
-    for (int i = 0; i < n; i++)
-        printf("%d ", arr[i]);
+    for (int i = 0; i < n; i++) printf("%d ", arr[i]);
     printf("\n");
 
     return 0;

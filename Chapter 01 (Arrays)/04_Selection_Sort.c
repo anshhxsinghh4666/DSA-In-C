@@ -1,4 +1,14 @@
-// SELECTION SORT : 
+// SELECTION SORT :
+
+/*
+Step 1: Loop from i = 0 to i = n − 2. Repeat the following steps:
+  • Set min_idx = i
+  • Loop from j = i + 1 to j = n − 1. Repeat the following:
+    - If arr[j] < arr[min_idx], then set min_idx = j
+  • After inner loop ends, check:
+    - If min_idx ≠ i, then swap arr[min_idx] and arr[i]
+Step 2: End
+*/
 
 #include <stdio.h>
 
@@ -42,7 +52,7 @@ int main() {
 
     if (n <= 0) {
         printf("Error: Array size must be a positive number.\n");
-        return 1; // Indicate an error
+        return 1;  // Indicate an error
     }
 
     // Note: Variable Length Arrays (VLAs) like arr[n] are a C99 feature.

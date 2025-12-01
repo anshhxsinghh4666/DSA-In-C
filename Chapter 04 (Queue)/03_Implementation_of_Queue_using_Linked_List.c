@@ -1,5 +1,31 @@
 // IMPLEMENTATION OF QUEUE USING LINKED LIST : Using Dyanamic Memory Allocation
 
+/*
+ALGORITHM : Enqueue Operation (Linked List Queue)
+Step 1: Create a new node using dynamic memory allocation
+  • newNode = malloc(sizeof(struct Node))
+  • Set newNode→data = x
+  • Set newNode→next = NULL
+Step 2: Check if head == NULL and tail == NULL
+  • If TRUE:
+    - Set head = newNode
+    - Set tail = newNode
+Step 3: Else
+  • Set tail→next = newNode
+  • Set tail = newNode
+Step 4: End
+
+ALGORITHM : Dequeue Operation (Linked List Queue)
+Step 1: Check if head == NULL and tail == NULL
+  • If TRUE → print "Queue is Empty" and stop
+Step 2: Else
+  • Set temp = head
+  • Print temp→data
+  • Move head to head→next
+  • Free temp
+Step 3: End
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
