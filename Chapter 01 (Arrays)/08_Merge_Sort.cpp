@@ -13,6 +13,18 @@ Step 3: Copy remaining elements of left half (if any)
 Step 4: Copy remaining elements of right half (if any)
 Step 5: Copy all elements from temp[] back to arr[left…right]
 Step 6: End
+
+ALGORITHM : Merge Sort
+Step 1: If left < right, continue. Otherwise return (array of one element is already sorted)
+Step 2: Find the midpoint
+  • mid = (left + right) / 2
+Step 3: Recursively call mergeSort(arr, left, mid)
+  • This sorts the left half
+Step 4: Recursively call mergeSort(arr, mid + 1, right)
+  • This sorts the right half
+Step 5: Call merge(arr, left, mid, right)
+  • This merges the two sorted halves into one sorted segment
+Step 6: End
 */
 
 #include <stdio.h>
